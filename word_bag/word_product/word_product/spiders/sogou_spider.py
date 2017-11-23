@@ -52,5 +52,6 @@ class SogouSpider(scrapy.Spider):
 
     def parse(self, response):
         _path = os.path.dirname(os.getcwd())
-        with open(_path + '/hub/' + response.meta['title'] + '.scel', 'w') as f:
+        file_path = _path + '/hub/' + response.meta['title'] + '.scel'
+        with open(file_path, 'w') as f:
             f.write(response.body)
