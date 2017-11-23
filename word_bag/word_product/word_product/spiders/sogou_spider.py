@@ -29,7 +29,7 @@ class SogouSpider(scrapy.Spider):
             'https://pinyin.sogou.com/dict/cate/index/31',  # 人文科学
             'https://pinyin.sogou.com/dict/cate/index/403',  # 娱乐休闲
             ]
-    total_page = 1
+    total_page = 300
 
     def start_requests(self):
         for url in self.urls:
