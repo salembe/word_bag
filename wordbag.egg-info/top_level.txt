@@ -1,1 +1,1 @@
-word_bag
+wordbag
