@@ -16,7 +16,7 @@ import sys
 
 setup(
     name="wordbag",
-    version="0.1.4",
+    version="0.1.5",
     author="amigo",
     author_email="88315203@qq.com",
     description="word bag",
