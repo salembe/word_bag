@@ -48,7 +48,7 @@ class SogouSpider(scrapy.Spider):
             yield scrapy.Request(url,
                                  callback=self.parse,
                                  meta=meta,
-                                 dont_filter=True)
+                                 dont_filter=False)
 
     def parse(self, response):
         _path = os.path.dirname(os.getcwd())+'/hub/'
