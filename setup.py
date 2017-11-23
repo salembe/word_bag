@@ -15,8 +15,8 @@ from setuptools import setup, find_packages
 import sys
 
 setup(
-    name="word-bag",
-    version="0.1.2",
+    name="wordbag",
+    version="0.1.1",
     author="amigo",
     author_email="88315203@qq.com",
     description="word bag",
@@ -25,8 +25,7 @@ setup(
     url="https://github.com/salembe/word_bag",
     packages=['word_bag'],
     install_requires=[
-
-
+        "jieba"
     ],
     classifiers=[
         "Environment :: Web Environment",
