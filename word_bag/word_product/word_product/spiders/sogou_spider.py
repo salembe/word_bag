@@ -9,6 +9,7 @@
 @file: sogou_spider.py
 @time: 2017/11/22 下午6:26
 """
+import os
 
 import scrapy
 
@@ -50,5 +51,6 @@ class SogouSpider(scrapy.Spider):
                                  dont_filter=True)
 
     def parse(self, response):
-        with open('../../hub/' + response.meta['title'] + '.scel', 'w') as f:
+        _path = os.path.dirname(os.getcwd())
+        with open(_path + '/hub/' + response.meta['title'] + '.scel', 'w') as f:
             f.write(response.body)
