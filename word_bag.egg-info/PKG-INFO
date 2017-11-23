@@ -1,11 +1,12 @@
 Metadata-Version: 1.1
 Name: word-bag
-Version: 0.1.1
+Version: 0.1.2
 Summary: word bag
 Home-page: https://github.com/salembe/word_bag
 Author: amigo
 Author-email: 88315203@qq.com
 License: MIT
+Description-Content-Type: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
 Classifier: Environment :: Web Environment
