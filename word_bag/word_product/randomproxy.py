@@ -104,10 +104,10 @@ class RandomProxy(object):
             return
         if self.mode == Mode.RANDOMIZE_PROXY_EVERY_REQUESTS or self.mode == Mode.RANDOMIZE_PROXY_ONCE:
             proxy = request.meta['proxy']
-            try:
-                del self.proxies[proxy]
-            except KeyError:
-                pass
+            # try:
+            #     # del self.proxies[proxy]
+            # except KeyError:
+            #     pass
             request.meta["exception"] = True
             if self.mode == Mode.RANDOMIZE_PROXY_ONCE:
                 self.chosen_proxy = random.choice(list(self.proxies.keys()))
